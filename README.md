@@ -25,23 +25,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/texttree/template-rcl">
+  <a href="https://github.com/texttree/projector-mode-rcl">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">projector-mode-rcl</h3>
 
   <p align="center">
-    project_description
+    The library allows you to view content in an additional window
     <br />
-    <a href="https://github.com/texttree/template-rcl"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/texttree/projector-mode-rcl"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://example.netlify.app">View Demo</a>
     ·
-    <a href="https://github.com/texttree/template-rcl/issues">Report Bug</a>
+    <a href="https://github.com/texttree/projector-mode-rcl/issues">Report Bug</a>
     ·
-    <a href="https://github.com/texttree/template-rcl/issues">Request Feature</a>
+    <a href="https://github.com/texttree/projector-mode-rcl/issues">Request Feature</a>
   </p>
 </div>
 
@@ -79,33 +79,26 @@
 
 **Purpose**
 
-- The purpose of this project
+- Be able to show content in a separate window
 
 **Problem**
 
-- The problem statement
+- there are very few programs that can show special content in projector mode. Often they have ready-made modules
 
 **Scope**
 
-- What's in scope and out of scope for this project?
+- the library helps to transfer content from one browser window to another.
+- the library should not depend on what content is transferred
 
 **Background**
 
-- What led us to this point? How did we get here?
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `texttree`, `template-rcl`, `telegram`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+- It's not easy to find a free app for a small church congregation to easily display bible verses during a service. Especially if it is a translation into OL.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
 - [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,6 +106,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ## Getting Started
 
+**IN PROGRESS**
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
@@ -133,7 +127,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```bash
-   git clone https://github.com/texttree/template-rcl.git
+   git clone https://github.com/texttree/projector-mode-rcl.git
    ```
 3. Install NPM packages
    ```bash
@@ -167,7 +161,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ Po
 - [] Feature 3
   - [] Nested Feature
 
-See the [open issues](https://github.com/texttree/template-rcl/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/texttree/projector-mode-rcl/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -202,9 +196,7 @@ Distributed under the MIT License. See [LICENSE](license-url) for more informati
 
 ## Contact
 
-Your Name - [@telegram](https://t.me/telegram) - email@email_client.com
-
-Project Link: [https://github.com/texttree/template-rcl](https://github.com/texttree/template-rcl)
+Project Link: [https://github.com/texttree/projector-mode-rcl](https://github.com/texttree/projector-mode-rcl)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -221,14 +213,14 @@ Project Link: [https://github.com/texttree/template-rcl](https://github.com/text
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/texttree/template-rcl.svg?style=for-the-badge
-[contributors-url]: https://github.com/texttree/template-rcl/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/texttree/template-rcl.svg?style=for-the-badge
-[forks-url]: https://github.com/texttree/template-rcl/network/members
-[stars-shield]: https://img.shields.io/github/stars/texttree/template-rcl.svg?style=for-the-badge
-[stars-url]: https://github.com/texttree/template-rcl/stargazers
-[issues-shield]: https://img.shields.io/github/issues/texttree/template-rcl.svg?style=for-the-badge
-[issues-url]: https://github.com/texttree/template-rcl/issues
-[license-shield]: https://img.shields.io/github/license/texttree/template-rcl.svg?style=for-the-badge
-[license-url]: https://github.com/texttree/template-rcl/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/texttree/projector-mode-rcl.svg?style=for-the-badge
+[contributors-url]: https://github.com/texttree/projector-mode-rcl/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/texttree/projector-mode-rcl.svg?style=for-the-badge
+[forks-url]: https://github.com/texttree/projector-mode-rcl/network/members
+[stars-shield]: https://img.shields.io/github/stars/texttree/projector-mode-rcl.svg?style=for-the-badge
+[stars-url]: https://github.com/texttree/projector-mode-rcl/stargazers
+[issues-shield]: https://img.shields.io/github/issues/texttree/projector-mode-rcl.svg?style=for-the-badge
+[issues-url]: https://github.com/texttree/projector-mode-rcl/issues
+[license-shield]: https://img.shields.io/github/license/texttree/projector-mode-rcl.svg?style=for-the-badge
+[license-url]: https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png

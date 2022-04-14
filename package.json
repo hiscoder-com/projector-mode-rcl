@@ -1,23 +1,24 @@
 {
-  "name": "@texttree/template-rcl",
+  "name": "@texttree/projector-mode-rcl",
   "author": "TextTree.org",
   "version": "0.1.0",
   "description": "",
   "keywords": [
     "rcl",
-    "react"
+    "react",
+    "projector"
   ],
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
-  "url": "https://github.com/texttree/template-rcl",
-  "homepage": "https://github.com/texttree/template-rcl#readme",
+  "url": "https://github.com/texttree/projector-mode-rcl",
+  "homepage": "https://github.com/texttree/projector-mode-rcl#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/texttree/template-rcl.git"
+    "url": "git+https://github.com/texttree/projector-mode-rcl.git"
   },
   "bugs": {
-    "url": "https://github.com/texttree/template-rcl/issues"
+    "url": "https://github.com/texttree/projector-mode-rcl/issues"
   },
   "publishConfig": {
     "access": "public"

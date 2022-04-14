@@ -25,7 +25,8 @@ module.exports = {
       meta: [
         {
           name: 'description',
-          content: 'React component library template',
+          content:
+            'React component library for displaying content in an additional window',
         },
       ],
       links: [
