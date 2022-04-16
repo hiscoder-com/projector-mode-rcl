@@ -8,8 +8,16 @@ let sections = [
     content: 'README.md',
   },
   {
-    name: 'Button Block',
-    components: ['src/components/Button/Button.js'],
+    name: 'Projector Block',
+    components: ['src/components/Projector/Projector.js'],
+  },
+  {
+    name: 'Projector Screen',
+    content: 'src/components/Projector/ProjectorScreen.md',
+  },
+  {
+    name: 'Projector Extra',
+    content: 'src/components/Projector/ProjectorExtra.md',
   },
 ];
 
@@ -29,12 +37,12 @@ module.exports = {
             'React component library for displaying content in an additional window',
         },
       ],
-      links: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,600',
-        },
-      ],
+      // links: [
+      //   {
+      //     rel: 'stylesheet',
+      //     href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,600',
+      //   },
+      // ],
     },
   },
   moduleAliases: { [name]: path.resolve(__dirname, 'src') },
@@ -66,6 +74,7 @@ module.exports = {
   usageMode: 'expand',
   pagePerSection: true,
   getComponentPathLine(componentPath) {
+    console.log(componentPath);
     const componentName = path.basename(componentPath, '.js');
     return `import { ${componentName} } from '${name}';`;
   },
