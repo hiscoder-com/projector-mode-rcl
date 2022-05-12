@@ -7,20 +7,11 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![Contributors](https://img.shields.io/github/contributors/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/network/members)
+[![Stargazers](https://img.shields.io/github/stars/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/stargazers)
+[![Issues](https://img.shields.io/github/issues/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/issues)
+[![MIT License](https://img.shields.io/github/license/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -75,7 +66,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Projector Mode RCL Shot](images/screenshot.png)](https://example.com)
 
 **Purpose**
 
@@ -94,13 +85,13 @@
 
 - It's not easy to find a free app for a small church congregation to easily display bible verses during a service. Especially if it is a translation into OL.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p style="text-align: right" align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
 - [React.js](https://reactjs.org/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p style="text-align: right" align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -188,7 +179,7 @@ If you would like to fork the repo and create a pull request.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](license-url) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -212,15 +203,3 @@ Project Link: [https://github.com/texttree/projector-mode-rcl](https://github.co
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/texttree/projector-mode-rcl.svg?style=for-the-badge
-[contributors-url]: https://github.com/texttree/projector-mode-rcl/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/texttree/projector-mode-rcl.svg?style=for-the-badge
-[forks-url]: https://github.com/texttree/projector-mode-rcl/network/members
-[stars-shield]: https://img.shields.io/github/stars/texttree/projector-mode-rcl.svg?style=for-the-badge
-[stars-url]: https://github.com/texttree/projector-mode-rcl/stargazers
-[issues-shield]: https://img.shields.io/github/issues/texttree/projector-mode-rcl.svg?style=for-the-badge
-[issues-url]: https://github.com/texttree/projector-mode-rcl/issues
-[license-shield]: https://img.shields.io/github/license/texttree/projector-mode-rcl.svg?style=for-the-badge
-[license-url]: https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE
-[product-screenshot]: images/screenshot.png
