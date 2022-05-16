@@ -1,4 +1,5 @@
 node_modules
+styleguide
 .yalc
 dist
 yarn-error.log
