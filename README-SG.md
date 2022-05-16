@@ -116,17 +116,23 @@ import React from 'react';
 import { useProjector } from '@texttree/projector-mode-rcl';
 
 export default function Settings() {
-  const {setData, getData} = useProjector();
+  const { setData, getData } = useProjector();
   return (
     <>
       <p>Set verse</p>
-      <input onChange={
-        (e)=>{setData('verse', e.target.value)}
-      } value={getData('verse')}>
+      <input
+        onChange={(e) => {
+          setData('verse', e.target.value);
+        }}
+        value={getData('verse')}
+      />
       <p>Set reference</p>
-      <input onChange={
-        (e)=>{setData('reference', e.target.value)}
-      } value={getData('reference')}>
+      <input
+        onChange={(e) => {
+          setData('reference', e.target.value);
+        }}
+        value={getData('reference')}
+      />
     </>
   );
 }
