@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/texttree/projector-mode-rcl">
-    <img src="images/logo.svg" alt="Logo" width="256" height="256">
+    <img src="https://github.com/texttree/projector-mode-rcl/images/logo.svg" alt="Logo" width="256" height="256">
   </a>
 
   <h3 align="center">projector-mode-rcl</h3>
@@ -38,7 +38,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -47,7 +46,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -55,7 +53,7 @@
 
 ## About The Project
 
-<img src="images/screenshot.png" alt="Projector Mode RCL Shot" width="100%">
+<img src="https://github.com/texttree/projector-mode-rcl/images/screenshot.png" alt="Projector Mode RCL Shot" width="100%">
 
 The library allows you to view content in an additional window
 
