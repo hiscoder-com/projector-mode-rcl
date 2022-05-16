@@ -1,3 +1,5 @@
+### Layout example
+
 ```jsx
 import React from 'react';
 

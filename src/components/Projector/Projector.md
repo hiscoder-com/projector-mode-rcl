@@ -1,4 +1,4 @@
-### Default example
+### Minimal example
 
 ```jsx
 import React from 'react';
@@ -16,7 +16,8 @@ const Empty = () => <>Empty Layout</>;
 import React from 'react';
 
 import { Projector } from '@texttree/projector-mode-rcl';
-
+/* Set the default values for the screen.
+This code is for demonstration purposes only. */
 localStorage.setItem(
   'projector_data',
   JSON.stringify({

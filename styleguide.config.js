@@ -1,23 +1,34 @@
 const path = require('path');
 const webpack = require('webpack');
+const fs = require('fs');
 const { name, version, url } = require('./package.json');
 
 let sections = [
   {
     name: 'README',
-    content: 'README.md',
+    content: 'README-SG.md',
   },
   {
-    name: 'Projector Block',
-    components: ['src/components/Projector/Projector.js'],
+    name: 'Base',
+    components: [
+      'src/components/Projector/Projector.js',
+      'src/components/Projector/useProjector.jsx',
+    ],
   },
   {
     name: 'Projector Screen',
     content: 'src/components/Projector/ProjectorScreen.md',
+    exampleMode: 'collapse',
   },
   {
-    name: 'Projector Extra',
-    content: 'src/components/Projector/ProjectorExtra.md',
+    name: 'Preview',
+    components: ['src/components/Extra/usePreview.jsx'],
+    sections: [
+      {
+        name: 'Example of Preview',
+        content: 'src/components/Extra/ProjectorExtra.md',
+      },
+    ],
   },
 ];
 
@@ -37,52 +48,68 @@ module.exports = {
             'React component library for displaying content in an additional window',
         },
       ],
-      // links: [
-      //   {
-      //     rel: 'stylesheet',
-      //     href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,600',
-      //   },
-      // ],
     },
   },
   moduleAliases: { [name]: path.resolve(__dirname, 'src') },
   skipComponentsWithoutExample: true,
   sections,
-  styles: {
-    ComponentsList: {
-      isSelected: {
-        fontWeight: 'normal',
-        '&>a': {
-          fontWeight: 'bold !important',
+  styles: function styles(theme) {
+    return {
+      ComponentsList: {
+        isSelected: {
+          fontWeight: 'normal',
+          '&>a': {
+            fontWeight: 'bold !important',
+          },
         },
       },
-    },
+      Code: {
+        code: {
+          // make inline code example appear the same color as links
+          backgroundColor: '#eff1f3',
+          fontSize: 14,
+          borderRadius: '6px',
+          padding: '.2em .4em',
+        },
+      },
+    };
   },
   theme: {
     color: {
-      link: '#4B4E6A',
-      linkHover: '#2B3847',
+      link: '#BA4D0C',
+      linkHover: '#7A0D0C',
       baseBackground: '#fff',
       border: '#D0DAE4',
       sidebarBackground: '#fff',
     },
-    fontFamily: {
-      base: '"Fira Sans", sans-serif',
-    },
+    fontFamily: {},
   },
   exampleMode: 'expand',
   usageMode: 'expand',
   pagePerSection: true,
   getComponentPathLine(componentPath) {
-    console.log(componentPath);
     const componentName = path.basename(componentPath, '.js');
     return `import { ${componentName} } from '${name}';`;
+  },
+  updateExample(props, exampleFilePath) {
+    const { settings, lang } = props;
+    if (typeof settings?.file === 'string') {
+      const filepath = path.resolve(path.dirname(exampleFilePath), settings.file);
+      settings.static = true;
+      delete settings.file;
+      return {
+        content: fs.readFileSync(filepath, 'utf8'),
+        settings,
+        lang,
+      };
+    }
+    return props;
   },
   webpackConfig: {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
         },

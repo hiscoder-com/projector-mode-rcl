@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { log } from '../../utils';
 import PropTypes from 'prop-types';
 
-function Projector({ Layout }) {
+/**
+ * Wrapper component for the second screen.
+ * On the second screen, you can use variables that are set via the useProjector hook.
+ * For interaction between windows, we use localstorage.
+ * The event fires if changes have been made to localstorage in another window.
+ * It will not work to listen for events on the current page.
+ *
+ * @param {Object} props
+ * @param {ReactComponentElement} props.Layout - React Component
+ * @returns
+ */
+export default function Projector({ Layout }) {
   const [projectorData, setProjectorData] = useState(
     JSON.parse(localStorage.getItem('projector_data'))
   );
-
-  log({ projectorData });
 
   useEffect(() => {
     const changed = (e) => {
@@ -24,7 +32,6 @@ function Projector({ Layout }) {
 }
 
 Projector.propTypes = {
+  /*React component with layout for the second screen*/
   Layout: PropTypes.elementType.isRequired,
 };
-
-export default Projector;

@@ -6,29 +6,28 @@
 [![Issues](https://img.shields.io/github/issues/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/issues)
 [![MIT License](https://img.shields.io/github/license/texttree/projector-mode-rcl.svg?style=for-the-badge)](https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE)
 
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/texttree/projector-mode-rcl">
     <img src="images/logo.svg" alt="Logo" width="256" height="256">
   </a>
-
-  <h3 align="center">projector-mode-rcl</h3>
-
-  <p align="center">
-    <a href="https://projector-mode-rcl.netlify.app"><strong>Explore the docs and code playground »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/texttree/projector-mode-rcl/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/texttree/projector-mode-rcl/issues">Request Feature</a>
-  </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+<h2><div align="center">projector-mode-rcl</div></h2>
+<br />
+
+<center><strong><a href="https://projector-mode-rcl.netlify.app">Explore the docs and code playground »</a></strong></center>
+<br />
+<br />
+<center>
+  <a href="https://github.com/texttree/projector-mode-rcl/issues">Report Bug · </a>
+  <a href="https://github.com/texttree/projector-mode-rcl/issues">Request Feature</a>
+</center>
+
+<br />
+<br />
 <details>
   <summary>Table of Contents ↧</summary>
-  <ol>
+  <ul>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -48,7 +47,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+  </ul>
 </details>
 
 <!-- ABOUT THE PROJECT -->
@@ -69,14 +68,14 @@ The library allows you to view content in an additional window
 
 **Scope**
 
-- the library helps to transfer content from one browser window to another.
+- the library helps to transfer content from one browser window to another
 - the library should not depend on what content is transferred
 
 **Background**
 
-- It's not easy to find a free app for a small church congregation to easily display bible verses during a service. Especially if it is a translation into OL.
+- It's not easy to find a free app for a small church congregation to easily display Bible verses during a service. Especially if it is a translation into OL.
 
-<p style="text-align: right" align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 ### Built With
 
@@ -84,7 +83,7 @@ The library allows you to view content in an additional window
 - [StorageEvent](https://developer.mozilla.org/en-US/docs/Web/API/StorageEvent)
 - [React Styleguidist](https://react-styleguidist.js.org/)
 
-<p style="text-align: right" align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- GETTING STARTED -->
 
@@ -106,7 +105,7 @@ yarn add @texttree/projector-mode-rcl
 npm install @texttree/projector-mode-rcl
 ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- USAGE EXAMPLES -->
 
@@ -167,7 +166,7 @@ export default function ProjectorPage() {
 
 _For more examples, please refer to the [Styleguidist link](https://projector-mode-rcl.netlify.app)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- ROADMAP -->
 
@@ -177,7 +176,7 @@ _For more examples, please refer to the [Styleguidist link](https://projector-mo
 
 See the [open issues](https://github.com/texttree/projector-mode-rcl/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- CONTRIBUTING -->
 
@@ -196,7 +195,7 @@ If you would like to fork the repo and create a pull request.
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- LICENSE -->
 
@@ -204,7 +203,7 @@ If you would like to fork the repo and create a pull request.
 
 Distributed under the MIT License. See [LICENSE](https://github.com/texttree/projector-mode-rcl/blob/master/LICENSE) for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- CONTACT -->
 
@@ -212,4 +211,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/texttree/pro
 
 Project Link: [https://github.com/texttree/projector-mode-rcl](https://github.com/texttree/projector-mode-rcl)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
