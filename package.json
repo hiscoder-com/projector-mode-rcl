@@ -37,8 +37,8 @@
     "build": "styleguidist build",
     "lint": "eslint --fix .",
     "prettier": "prettier --write .",
-    "build:babel": "babel ./src --out-dir ./dist -s inline",
-    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline",
+    "build:babel": "babel ./src --out-dir ./dist -s inline --ignore './src/components/**/*.jsx'",
+    "prepublishOnly": "rm -fr ./dist & yarn build:babel",
     "precommit": "lint-staged"
   },
   "peerDependencies": {
@@ -67,7 +67,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-styleguidist": "^11.2.0",
-    "webpack": "^5.72.1"
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "^3.22.5"
+  }
 }
