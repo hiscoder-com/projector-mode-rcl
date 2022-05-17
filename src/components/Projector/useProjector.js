@@ -22,7 +22,7 @@ function useProjector() {
 
   // get value by key
   const getData = (key) => {
-    return projectorData[key];
+    return projectorData?.[key];
   };
 
   // get all data
