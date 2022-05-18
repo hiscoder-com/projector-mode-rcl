@@ -7,27 +7,22 @@ import { useEffect, useState } from 'react';
  * */
 
 function useProjector() {
-  const [projectorData, setProjectorData] = useState(() =>
-    JSON.parse(localStorage.getItem('projector_data'))
-  );
-
-  useEffect(() => {
-    localStorage.setItem('projector_data', JSON.stringify(projectorData));
-  }, [projectorData]);
-
   // store value by specific key
   const setData = (key, value) => {
-    setProjectorData((prev) => ({ ...prev, [key]: value }));
+    const _projector_data = JSON.parse(localStorage.getItem('projector_data'));
+    const projector_data = { ..._projector_data, [key]: value };
+    localStorage.setItem('projector_data', JSON.stringify(projector_data));
   };
 
   // get value by key
   const getData = (key) => {
-    return projectorData?.[key];
+    const projector_data = JSON.parse(localStorage.getItem('projector_data'));
+    return projector_data?.[key];
   };
 
   // get all data
   const getAllData = () => {
-    return projectorData;
+    return JSON.parse(localStorage.getItem('projector_data'));
   };
 
   return { setData, getData, getAllData };

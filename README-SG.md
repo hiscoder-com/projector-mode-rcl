@@ -109,29 +109,35 @@ npm install @texttree/projector-mode-rcl
 
 ## Usage
 
-Use the useProjector hook to pass data to the second screen. For example:
+Use the useProjector hook to pass data to the second screen.
+If you need to somehow manage the value, then use getData only to set the initial value.
+For example:
 
 ```js static
-import React from 'react';
+import React, { useState } from 'react';
 import { useProjector } from '@texttree/projector-mode-rcl';
 
 export default function Settings() {
   const { setData, getData } = useProjector();
+  const [verse, setVerse] = useState(() => getData('verse'));
+  const [reference, setReference] = useState(() => getData('reference'));
   return (
     <>
       <p>Set verse</p>
       <input
         onChange={(e) => {
+          setVerse(e.target.value);
           setData('verse', e.target.value);
         }}
-        value={getData('verse')}
+        value={verse}
       />
       <p>Set reference</p>
       <input
         onChange={(e) => {
+          setReference(e.target.value);
           setData('reference', e.target.value);
         }}
-        value={getData('reference')}
+        value={reference}
       />
     </>
   );

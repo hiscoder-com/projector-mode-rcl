@@ -3,7 +3,7 @@ If you want to show a preview, you can use this example along with the hook as a
 If you scroll the screen in preview mode, then the content in the second window will be scrolled
 
 ```jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 import { useProjector, usePreview } from '@texttree/projector-mode-rcl';
 
@@ -22,6 +22,8 @@ const projectorLink = '/#!/Projector Screen/Projector Screen/1';
 
 const Component = () => {
   const { getData, setData } = useProjector();
+  const [verse, setVerse] = useState(() => getData('verse'));
+  const [reference, setReference] = useState(() => getData('reference'));
 
   const { handleProjectorToggle, isOpen, projectorWindowSize, previewRef, scale } =
     usePreview({
@@ -37,13 +39,19 @@ const Component = () => {
       </button>
       <br />
       <input
-        value={getData('verse')}
-        onChange={(e) => setData('verse', e.target.value)}
+        value={verse}
+        onChange={(e) => {
+          setVerse(e.target.value);
+          setData('verse', e.target.value);
+        }}
       />
       <br />
       <input
-        value={getData('reference')}
-        onChange={(e) => setData('reference', e.target.value)}
+        value={reference}
+        onChange={(e) => {
+          setReference(e.target.value);
+          setData('reference', e.target.value);
+        }}
       />
       <br />
       <label>Preview</label>
