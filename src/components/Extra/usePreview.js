@@ -43,7 +43,7 @@ export default function usePreview({
     };
     iframe.document.addEventListener('scroll', updatePosition);
     updatePosition();
-    return () => iframe.document.removeEventListener('scroll', updatePosition);
+    return () => iframe?.document?.removeEventListener('scroll', updatePosition);
   }, [isOpen]);
 
   // listen for the screen resize event so that we can show the same sizes in the preview
@@ -59,7 +59,10 @@ export default function usePreview({
       updateProjectorWindowSize();
     }
     return () =>
-      projectorWindowRef.current.removeEventListener('resize', updateProjectorWindowSize);
+      projectorWindowRef?.current?.removeEventListener(
+        'resize',
+        updateProjectorWindowSize
+      );
   }, [isOpen]);
 
   // Open a new window with the desired size, and save a ref to this window
