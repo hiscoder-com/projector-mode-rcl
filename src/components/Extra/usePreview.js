@@ -49,10 +49,15 @@ export default function usePreview({
   // listen for the screen resize event so that we can show the same sizes in the preview
   useLayoutEffect(() => {
     function updateProjectorWindowSize() {
-      setProjectorWindowSize({
-        width: projectorWindowRef.current.innerWidth,
-        height: projectorWindowRef.current.innerHeight,
-      });
+      if (
+        projectorWindowRef.current.innerWidth > 0 &&
+        projectorWindowRef.current.innerHeight > 0
+      ) {
+        setProjectorWindowSize({
+          width: projectorWindowRef.current.innerWidth,
+          height: projectorWindowRef.current.innerHeight,
+        });
+      }
     }
     if (isOpen && projectorWindowRef.current) {
       projectorWindowRef.current.addEventListener('resize', updateProjectorWindowSize);
@@ -103,7 +108,7 @@ export default function usePreview({
     ) {
       // Since it is impossible to divide by 0, we will immediately return 0
       // TODO need to check if this code works
-      return 0;
+      return 1;
     }
     return projectorWindowSize.height / projectorWindowSize.width >
       previewSize.height / previewSize.width
