@@ -3,5 +3,5 @@
   "version": "0.5.3",
   "date": "2022-04-14",
   "logo": "https://raw.githubusercontent.com/texttree/projector-mode-rcl/master/images/logo.png",
-  "dependencies":["core-js"]
+  "dependencies":["core-js", "@texttree/filter-translation-words-rcl"]
 }
